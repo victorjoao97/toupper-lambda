@@ -12,9 +12,16 @@ namespace ToUpper
 {
     public class Function
     {
-        public bool FunctionHandler(int entidade_id, ILambdaContext context)
+        public bool FunctionHandler(RequestImportacaoDataConsig request, ILambdaContext context)
         {
-            return entidade_id % 2 == 0;
+            return request.Entidade_Id % 2 == 0;
         }
+    }
+
+    public class RequestImportacaoDataConsig
+    {
+        public int Entidade_Id { get; set; }
+        public int Usuario_Id { get; set; }
+        public int Unidade_Id { get; set; }
     }
 }
