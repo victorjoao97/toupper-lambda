@@ -12,9 +12,9 @@ namespace ToUpper
 {
     public class Function
     {
-        public string FunctionHandler(string input, ILambdaContext context)
+        public bool FunctionHandler(int entidade_id, ILambdaContext context)
         {
-            return input?.ToUpper();
+            return entidade_id % 2 == 0;
         }
     }
 }
