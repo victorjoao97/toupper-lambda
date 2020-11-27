@@ -21,7 +21,7 @@ namespace ToUpper
     public class RequestImportacaoDataConsig
     {
         public int Entidade_Id { get; set; }
-        public int Usuario_Id { get; set; }
-        public int Unidade_Id { get; set; }
+        public int? Usuario_Id { get; set; }
+        public int? Unidade_Id { get; set; }
     }
 }
